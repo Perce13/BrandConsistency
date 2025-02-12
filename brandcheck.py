@@ -159,12 +159,12 @@ def main():
                     for channel in analyzer.channels:
                         metrics_data.append({
                             'Metric': channel,
-                            'Type': 'Current',
+                            'Type': 'Auswahl',
                             'Value': consistency_results[channel]['value']
                         })
                         metrics_data.append({
                             'Metric': channel,
-                            'Type': 'Reference',
+                            'Type': 'Bildwelt',
                             'Value': analyzer.reference_stats[channel]['mean']
                         })
                     
@@ -177,8 +177,8 @@ def main():
                                 title='Metrics Comparison',
                                 barmode='group',
                                 color_discrete_map={
-                                    'Current': '#1f77b4',
-                                    'Reference': '#2ca02c'
+                                    'Auswahl': '#1f77b4',
+                                    'Bildwelt': '#2ca02c'
                                 })
                     st.plotly_chart(fig, use_container_width=True)
             
