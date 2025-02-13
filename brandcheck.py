@@ -93,10 +93,10 @@ class ImageWorldAnalyzer:
         return is_consistent, results
 
 def main():
-    st.set_page_config(page_title="Image World Analyzer", layout="wide")
+    st.set_page_config(page_title="BRAND CONSISTENCY CHECK", layout="wide")
     
     st.title("YOUR BRAND CONSISTENCY CHECK (beta)")
-    st.write("Upload images to analyze their consistency with the corporate brand imagery.")
+    st.write("Upload images to analyze their consistency with your corporate brand imagery.")
 
     analyzer = ImageWorldAnalyzer()
     detailed_results = []
