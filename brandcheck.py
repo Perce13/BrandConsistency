@@ -95,7 +95,7 @@ class ImageWorldAnalyzer:
 def main():
     st.set_page_config(page_title="Image World Analyzer", layout="wide")
     
-    st.title("BRAND CONSISTENCY CHECK")
+    st.title("YOUR BRAND CONSISTENCY CHECK (beta)")
     st.write("Upload images to analyze their consistency with the corporate brand imagery.")
 
     analyzer = ImageWorldAnalyzer()
