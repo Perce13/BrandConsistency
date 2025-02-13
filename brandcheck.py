@@ -94,6 +94,10 @@ class ImageWorldAnalyzer:
 
 def main():
     st.set_page_config(page_title="Image World Analyzer", layout="wide")
+
+    # Logo laden und anzeigen
+    logo = Image.open('SE_Logo_Button_RGB-ON Blau.png')  # Ersetzen Sie dies mit dem tatsächlichen Pfad zu Ihrem Logo
+    st.image(logo, width=200)
     
     st.title("BRAND CONSISTENCY CHECK")
     st.write("Upload images to analyze their consistency with the corporate brand imagery.")
